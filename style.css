@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-container {
+    background-color: #010101;
+    padding: 1em;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: rgb(255, 184, 184);
+}
+
+#navbar li a span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(112, 127, 255);
+}
+
+.dir {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.dir a {
+    margin: 0 4px;
+    text-decoration: none;
+    color:rgb(111, 238, 255);
+}
+
+.dir a:hover, #navbar li a span:hover {
+    color:rgb(255, 184, 184);
+}
+
+.dir a::after {
+    content: '>';
+    font-family: cursive;
+    margin-left: 5px;
+}
+
+.main {
+    padding: 15px;
+}
+
+.songs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80vw;
+    padding: 1em;
+    gap: 1em;
+}
+
+.play {
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+}
+
+.song:hover {
+    background-color: #3c3c3c;
+}
+
+.song img:first-child, #cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.songInfo {
+    color: #4290f2;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: royalblue;
+    height: 5rem;
+    width: 100vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.player {
+    margin: 0 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recent {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#masterPlay {
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+}
